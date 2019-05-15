@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Donation on the Blockchain</title>
+  <link rel="icon" href="https://pinktie.org/wp-content/uploads/2018/03/charity-icon.png">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <script src="./app.js"></script>
+</head>
+<body class="colorful">
+  <center>
+    <h1 class="animated infinite rubberBand delay-2s"><i class="fas fa-hand-holding-usd"></i>&nbsp;Donation.com</h1>
+    <h3>Distributed Donation application on the blockchain</h2>
+
+    <br><br><button type="button" class="btn btn-warning" id="create" onclick="App.createProject()"><i class="fas fa-grip-lines"></i>&nbsp;Create Donate Project&nbsp;<i class="fas fa-grip-lines"></i></button>
+    <br><br>
+    <span id="owner"></span>
+
+    <div id="donations" class="card-deck mb-3 text-center">
+
+    </div>
+    <div class="my-3 p-3 bg-white rounded shadow-lg">
+      <h4 class="border-bottom border-gray pb-2 mb-0"><i class="fas fa-bars"></i>&nbsp;Recent donations</h6>
+      <table style="text-align: center; width: 100%;" class="table-dark table-responsive-lg table-bordered table-hover">
+        <thead>
+          <tr>
+            <th scope="col"><small>#</small></th>
+            <th scope="col"><small>From</small></th>
+            <th scope="col"><small>To</small></th>
+            <th scope="col"><small>Value</small></th>
+          </tr>
+        </thead>
+        <tbody id="tx">
+
+        </tbody>
+      </table>
+    </div>
+    <span id="status"></span>
+    <br>
+  </center>
+</body>
+</html>
